@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.4.0//EN" "http://google-web-toolkit.googlecode.com/svn/tags/2.4.0/distro-source/core/src/gwt-module.dtd">
+<module>
+    <!-- <inherits name="org.atmosphere.gwt.Client"/>
+    <inherits name="com.google.gwt.logging.Logging"/>
+    <inherits name="gf.auth.AuthService"/>-->
+    
+    <!-- <set-property name="gwt.logging.logLevel" value="FINEST"/>-->
+	<source path="client"/>
+    <source path="shared"/>
+	<!-- <entry-point class="gf.channel.client.TestChannelApp"/>-->
+	
+	<!-- <script src="jquery-1.6.4.js"/>
+	<script src="jquery.atmosphere.js"/>-->
+	<!-- <script src="streamhub-min.js"/>
+	<inherits name="com.google.gwt.animation.Animation"/>-->
+
+<!-- XSS linker does not support script tag
+<script src="atmosphere.js"/>-->
+	
+	<inherits name="com.google.gwt.user.User" />
+    <inherits name="com.google.gwt.xhr.XMLHttpRequest"/>
+    <inherits name="com.googlecode.gwtstreamer.GWTStreamer"/>
+    <inherits name="com.google.gwt.logging.Logging"/>
+    <inherits name="elemental.Elemental"/>
+    <set-property name="gwt.logging.enabled" value="TRUE"/>
+    <set-property name="gwt.logging.logLevel" value="FINEST"/>
+
+    <!-- <inherits name="org.atmosphere.gwt20.AtmosphereGwt20"/> -->
+    <!-- <inherits name="org.atmosphere.gwt.Client"/> -->
+    
+</module>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.4.0//EN" "http://google-web-toolkit.googlecode.com/svn/tags/2.4.0/distro-source/core/src/gwt-module.dtd">
+<module>
+  <!-- Inherit our applications main module.                      -->
+	<inherits name="com.google.gwt.user.User" />
+  	<inherits name='gf.channel.MessageChannel' />
+  	<inherits name='com.google.gwt.logging.Logging'/>
+
+  	<servlet class="gf.channel.server.servlet.SampleWebsocketServlet" path="/rpc/ws"/>
+	<servlet class="gf.channel.server.servlet.SamplePollingServlet" path="/rpc/poll"/>
+	<!--<servlet class="gf.channel.server.servlet.legacy.JettyWSTestServlet" path="/rpc/wstest"/>-->
+	<servlet class="com.google.gwt.logging.server.RemoteLoggingServiceImpl" path="/gf.channel.MessageChannelJUnit.JUnit/remote_logging"/>
+</module>
